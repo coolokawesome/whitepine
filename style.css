@@ -1,0 +1,59 @@
+@font-face {
+    font-family: DM;
+    src: url(fonts/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: DM-italic;
+    src: url(fonts/DMSerifDisplay-Italic.ttf);
+}
+
+body {
+    background-color: rgb(190, 190, 190);
+}
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.header-container {
+background-color: rgb(255, 255, 255);
+}
+
+.landing-container {
+position: relative;    
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+transform-style: preserve-3d;
+z-index: -1;
+}
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
+    filter:saturate(20%)
+}
+@media screen and (max-width: 1024px) {
+    
+}
+h1 {
+    font-family: 'DM';
+    color: white;
+    font-size: 5rem;
+    text-shadow: 0 0 4px black;
+    transform: translateY(-20vh)
+}
+
+.footer-container {
+    background-color:rgb(0, 0, 0);
+}
+.second-container {
+    background-color: rgb(0, 0, 0);
+    color: white !important;
+}
