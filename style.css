@@ -6,15 +6,21 @@
     font-family: DM-italic;
     src: url(fonts/DMSerifDisplay-Italic.ttf);
 }
+@font-face {
+    font-family: Nanum;
+    src: url(fonts/NanumMyeongjo-Regular.ttf);
+}
 
 body {
     background-color: rgb(190, 190, 190);
+    transition-duration: 0.2s !important;
 }
 .wrapper {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    transition-duration: 0.2s;
 }
 
 .header-container {
@@ -46,9 +52,6 @@ z-index: -1;
     transform: translateY(-25vh);
 }
 
-@media screen and (max-width: 1024px) {
-    
-}
 h1 {
     color: white;
     font-size: 5rem;
@@ -60,6 +63,10 @@ h2 {
 }
 h1, h2, h3 {
     font-family: 'DM';
+}
+p {
+    font-family: 'Nanum';
+    color:rgb(203, 203, 203)
 }
 .footer-container {
     background-color:rgb(0, 0, 0);
@@ -75,6 +82,9 @@ h1, h2, h3 {
 }
 .contact-container {
 }
+.connect-container {
+
+}
 
 .btn {
 border: 2px solid black;
@@ -85,4 +95,15 @@ color: black
     border: 2px solid black;
 background-color: rgba(0, 0, 0, 0.675);
 color: rgb(255, 255, 255);
+}
+.nav-link {
+    transition-duration: 2s !important;
+
+}
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.nav-link:not(hover) {
+    transition-duration: 2s;
 }
