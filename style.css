@@ -47,6 +47,9 @@ z-index: -1;
     flex-basis: 100%;
     transform: translateY(-25vh);
 }
+.title-addr {
+    flex-basis: 100%;
+}
 
 h1 {
     color: white;
@@ -54,10 +57,13 @@ h1 {
     text-shadow: 0 0 4px black;
     transform: translateY(-20vh)
 }
+.contact-text {
+    text-shadow: 0 0 4px black;
+}
 h2 {
     color: white;
 }
-h1, h2, h3, h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'DM';
 }
 h3 {
@@ -96,4 +102,21 @@ p {
     color: rgb(21, 66, 99) !important;
     transition-duration: 0.2s !important;
     transform: scale(1.2) !important;
+}
+.contact-container {
+    background:  url("./imgs/conact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+i {
+    color: white;
+    transition-duration: 0.2s;
+}
+
+i:hover {
+cursor: pointer;
+transform: scale(1.1);
+color: rgb(187, 223, 255);
 }
