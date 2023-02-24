@@ -39,6 +39,9 @@ z-index: -1;
     transform: translateZ(-10px) scale(2);
     filter:saturate(20%)
 }
+.hero-img {
+    transform: translateY(-15vh);
+}
 @media screen and (max-width: 1024px) {
     
 }
@@ -49,6 +52,10 @@ h1 {
     text-shadow: 0 0 4px black;
     transform: translateY(-20vh)
 }
+h2 {
+    font-family: 'DM';
+    color: white;
+}
 
 .footer-container {
     background-color:rgb(0, 0, 0);
@@ -56,4 +63,10 @@ h1 {
 .second-container {
     background-color: rgb(0, 0, 0);
     color: white !important;
+}
+.about-container {
+    background-color: black;
+}
+.artists-container {
+    background-color: black;
 }
