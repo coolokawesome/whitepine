@@ -24,6 +24,7 @@ background-color: rgb(255, 255, 255);
 .landing-container {
 position: relative;    
 display:flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 100%;
@@ -39,9 +40,12 @@ z-index: -1;
     transform: translateZ(-10px) scale(2);
     filter:saturate(20%)
 }
-.hero-img {
-    transform: translateY(-15vh);
+
+.title-btn {
+    flex-basis: 100%;
+    transform: translateY(-25vh);
 }
+
 @media screen and (max-width: 1024px) {
     
 }
@@ -68,5 +72,6 @@ h2 {
     background-color: black;
 }
 .artists-container {
-    background-color: black;
+}
+.contact-container {
 }
