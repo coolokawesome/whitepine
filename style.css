@@ -15,6 +15,7 @@
 
 body {
     background-color: rgb(190, 190, 190);
+    transition-duration: 0.2s;
 }
 
 .wrapper {
@@ -43,9 +44,11 @@ body {
     width: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-10px) scale(3) translateY(-1vh);
     filter: saturate(20%)
+    
 }
+
 
 .title-btn {
     flex-basis: 100%;
@@ -112,7 +115,7 @@ p {
 
 .nav-link:hover {
     color: rgb(136, 180, 141) !important;
-    transform: scale(1.06) !important;
+    transform: scale(1.03) !important;
 }
 
 .contact-container {
@@ -128,21 +131,46 @@ i {
 
 i:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: rgb(220, 255, 230);
 }
 
 .btn-primary {
-    background-color: rgb(53, 150, 87);
-    border-color: rgb(41, 94, 50) !important;
+    background-color: rgb(97, 132, 85);
+    color:white;
+    border: 1px solid white;
+    transition-duration: 0.2s;
 }
 
 .btn-primary:hover {
-    transition-duration: 0.2s !important;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    color:rgb(33, 33, 33);
+    border: 1px solid white;
+    transition-duration: 0.2s;
 }
 
 .btn-secondary {
-    background-color: rgb(132, 148, 137);
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    border: 1px solid white;
+    transition-duration: 0.2s;
+}
+.btn-secondary:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(33, 33, 33);
+    border: 1px solid white;
+    transition-duration: 0.2s;
+}
 
+.btn-FAQ {
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    border: 1px solid white;
+    transition-duration: 0.2s;
+}
+.btn-FAQ:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(33, 33, 33);
+    border: 1px solid white;
+    transition-duration: 0.2s;
 }
