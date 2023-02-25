@@ -2,10 +2,12 @@
     font-family: DM;
     src: url(fonts/DMSerifDisplay-Regular.ttf);
 }
+
 @font-face {
     font-family: DM-italic;
     src: url(fonts/DMSerifDisplay-Italic.ttf);
 }
+
 @font-face {
     font-family: Nanum;
     src: url(fonts/NanumMyeongjo-Regular.ttf);
@@ -14,6 +16,7 @@
 body {
     background-color: rgb(190, 190, 190);
 }
+
 .wrapper {
     height: 100vh;
     overflow-y: auto;
@@ -24,15 +27,16 @@ body {
 
 
 .landing-container {
-position: relative;    
-display:flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-height: 100%;
-transform-style: preserve-3d;
-z-index: -1;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
 }
+
 .background {
     position: absolute;
     height: 100%;
@@ -40,15 +44,20 @@ z-index: -1;
     object-fit: cover;
     z-index: -1;
     transform: translateZ(-10px) scale(2);
-    filter:saturate(20%)
+    filter: saturate(20%)
 }
 
 .title-btn {
     flex-basis: 100%;
     transform: translateY(-25vh);
 }
+
 .title-addr {
     flex-basis: 100%;
+}
+
+.her0-img {
+    transform: scale(0.5);
 }
 
 h1 {
@@ -57,58 +66,60 @@ h1 {
     text-shadow: 0 0 4px black;
     transform: translateY(-20vh)
 }
+
 .contact-text {
     text-shadow: 0 0 4px black;
 }
+
 h2 {
     color: white;
 }
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'DM';
 }
-h3 {
-    
+
+.btn {
+    font-family: 'DM';
+
 }
+
 p {
     font-family: 'Nanum';
-    color:rgb(203, 203, 203)
+    color: rgb(203, 203, 203)
 }
+
 .footer-container {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
+
 .second-container {
     background-color: rgb(0, 0, 0);
     color: white !important;
 }
+
 .about-container {
     background-color: black;
 }
 
 .nav-link {
-
-}
-.nav-link:hover {
-    transform: scale(1.1);
-}
-
-.nav-link:not(hover) {
-}
-
-.back {
-    transition-duration: 0.2s !important;
     transform: scale(1) !important;
 }
-.back:hover {
-    color: rgb(21, 66, 99) !important;
-    transition-duration: 0.2s !important;
-    transform: scale(1.2) !important;
+
+.nav-link:hover {
+    color: rgb(136, 180, 141) !important;
+    transform: scale(1.06) !important;
 }
+
 .contact-container {
-    background:  url("./imgs/conact.png");
+    background: url("./imgs/conact.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 i {
     color: white;
@@ -116,7 +127,23 @@ i {
 }
 
 i:hover {
-cursor: pointer;
-transform: scale(1.1);
-color: rgb(187, 223, 255);
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(220, 255, 230);
+}
+
+.btn-primary {
+    background-color: rgb(53, 150, 87);
+    border-color: rgb(41, 94, 50) !important;
+
+}
+
+.btn-primary:hover {
+    transition-duration: 0.2s !important;
+    background-color: black;
+}
+
+.btn-secondary {
+    background-color: rgb(132, 148, 137);
+
 }

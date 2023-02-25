@@ -1,0 +1,12 @@
+1.  fix the positioning of the buttons relative to the bottom of the logo (all fixed, just fix the xxl positioning)
+2.  change the styling of the buttons
+3.  heighten the contact form
+4.  figure out a better space for the form notice
+5.  format the FAQ section 
+6.  Set up n FAQ page 
+7.  Link a downloadable aftercare PDF (if exists) on the FAQ page 
+8.  formatting on the form box, ( fix the types)
+9.  link a form forwarding service to the form 
+DONE navbar positioning to the center 
+11.  Navbar links!!!!
+12.  Button links!!!!
