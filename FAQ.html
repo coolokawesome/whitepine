@@ -16,125 +16,153 @@
     <!-- Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <!-- Masonry -->
-        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" defer></script>
+    <!-- Masonry -->
     <link rel="stylesheet" href="/style.css">
     <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Content start -->
-        <!-- Header -->
-        <section class="header-container">
-            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">About</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">Contact</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">FAQ & Aftercare</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">Gallery</a>
-                        </div>
+    <!-- Content start -->
+    <!-- Header -->
+    <section class="header-container bg-dark">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none">
+                <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"
+                    src="./imgs/WPTI_Icon_White.png"></img>
+            </a>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 pe-3">
+                <li><a href=".landing-container" class="nav-link px-2 link-light">Home</a></li>
+                <li><a href="./gallery.html" class="nav-link px-2 link-light">Galleries</a></li>
+                <li><a href="#artists" class="nav-link px-2 link-light">Artists</a></li>
+                <li><a href="#contact" class="nav-link px-2 link-light">Contact</a></li>
+                <li><a href="./FAQ.html" class="nav-link px-2 link-secondary">FAQs & Aftercare</a></li>
+            </ul>
+        </header>
+    </section>
+    <section class="FAQ-container bg-dark">
+        <div class="header-container bg-dark border-bottom">
+            <div class="">
+                <div class="row">
+                    <div class="faq-banner img img-fluid">
+                        <h2 class="text-center text-light">Frequently Asked Questions</h2>
                     </div>
-                </div>
-            </nav>
-        </section>
-        <section>
-            <div class="header-container bg-dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="">
-                            <h2 class="text-center text-light">Gallery</h2>
-                        </div>
-                        <div class="col-12">
+                    <div class="col-12 border-top pt-3 pb-3">
+                        <div class="d-flex justify-content-between pe-2 ps-2">
                             <a href="./index.html" class="back text-decoration-none text-light">
                                 <h5 class=""> ← Go Back</h5>
                             </a>
-                        </div>
-                    </div>
-                    <div class="row" data-masonry='{"percentPosition": true },  "itemSelector": ".col" }'>
-                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
-                        </div>                        <div class="col-sm-6 col-lg-4">
-                            <img class="img img-fluid" src="https://source.unsplash.com/random/?Banana/">
+                            <a target="_blank" href="https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf" class="text-decoration-none link-light">
+                                <h5 class="back link-light">View Our Aftercare PDF →</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="photos-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-0 col-md-4 col-sm-hidden ">
+                <nav id="navbar" class="h-100 flex-column align-items-stretch  border-end bg-dark">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link link-light" href="#item-1">How can I book an appointment?</a>
+                        <a class="nav-link link-light" href="#item-2">Do you take walk-ins?</a>
+                        <a class="nav-link link-light" href="#item-3">Does a tattoo hurt?</a>
+                        <a class="nav-link link-light" href="#item-4">How do I prepare for my tattoo appointment</a>
+                        <a class="nav-link link-light" href="#item-6">How long will it take for my tattoo to heal?</a>
+                        <a class="nav-link link-light" href="#item-7">Can I bring a design or picture for my tattoo?</a>
+                        <a class="nav-link link-light" href="#item-8">What is the minimum age requirement for getting a tattoo?</a>
+                        <a class="nav-link link-light" href="#item-8">etc...</a>
 
+                    </nav>
+                </nav>
+            </div>
 
-
+            <div class="col-12 col-md-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2 bg-dark" tabindex="0">
+                    <div id="item-1">
+                        <h4>How can I book an appointment?</h4>
+                        <p>To book an appointment at our tattoo studio, you can call us or visit our website and
+                            fill out the booking form. Once we receive your request, we will get in touch with you
+                            to confirm the date and time of your appointment.</p>
+                    </div>
+                    <div id="item-2">
+                        <h4>Do you take walk-ins?</h4>
+                            <p>Yes, we do take walk-ins. However, we recommend that you call ahead to check our
+                                availability or book an appointment in advance to avoid any disappointment.</p>
+                    </div>
+                    <div id="item-3">
+                        <h4>Does a tattoo hurt?</h4>
+                            <p>
+                                Tattooing involves piercing the skin with a needle, so there will be some level of
+                                discomfort or pain. However, the amount of pain varies depending on the individual's
+                                pain tolerance and the location of the tattoo. Our experienced artists will do their
+                                best to make you as comfortable as possible during the process.
+                            </p>
+                    </div>
+                    <div id="item-4">
+                        <h4>How do I prepare for my tattoo appointment?
+                        </h4>
+                            <p>To prepare for your tattoo appointment, make sure to get a good night's sleep, stay
+                                hydrated, and eat a meal beforehand. Avoid drinking alcohol or taking blood-thinning
+                                medication. Also, wear loose clothing that allows easy access to the area you want
+                                tattooed.</p>
+                    </div>
+                    <div id="item-5">
+                        <h4>Do you take walk-ins?</h4>
+                            <p>Yes, we do take walk-ins. However, we recommend that you call ahead to check our
+                                availability or book an appointment in advance to avoid any disappointment.</p>
+                    </div>
+                    <div id="item-6">
+                        <h4>How long will my tattoo take to heal?</h4>
+                            <p>The healing time for a tattoo varies depending on the size, location, and complexity
+                                of the design. Generally, it takes 2-3 weeks for the outer layer of the skin to
+                                heal, but the complete healing process can take up to 4-6 weeks.</p>
+                    </div>
+                    <div id="item-7">
+                        <h4>Can I bring a design or picture for my tattoo?</h4>
+                            <p>Yes, you can bring your own design or picture to your tattoo appointment. Our artists
+                                will work with you to make sure your design is the best it can be and fits well in
+                                the chosen location.</p>
+                    </div>
+                    <div id="item-8">
+                        <h4>What is the minimum age requirement for getting a tattoo?</h4>
+                            <p>The minimum age to get a tattoo is 18 years old. If accompanied by an immediate
+                                family member/guardian,
+                                this age is 16. 2 forms of valid identifiation for both parties will be required.
+                            </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Footer -->
-        <section class="footer-container bg-dark ">
-            <div class="container">
-                <div class="row">
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer-container bg-dark ">
+        <div class="container">
+            <div class="row">
 
-                </div>
-                <footer class="py-3 my-4 text-light">
-                    <div>
-                        <p class="text-light text-center">Back to Top</p>
-                    </div>
-                    <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-light">
-                        <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-light " aria-current="page" href="#">About</a>
-                        <a class="nav-link text-light " aria-current="page" href="#">Contact</a>
-                        <a class="nav-link text-light " aria-current="page" href="#">FAQ & Aftercare</a>
-                    </ul>
-                    <p class="text-center text-light">© 2022 Company, Inc</p>
-                    <p class="text-center text-light ">Site by <a class=" text-decoration-none text-info"
-                            target="_blank" href="https://www.syrussamson.ca">syrussamson.ca</a></p>
-                </footer>
             </div>
-        </section>
-    </div>
+            <footer class="py-3 text-light">
+                <div>
+                    <p class="text-light text-center">Back to Top</p>
+                </div>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-light">
+                    <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-light " aria-current="page" href="#">About</a>
+                    <a class="nav-link text-light " aria-current="page" href="#">Contact</a>
+                    <a class="nav-link text-light " aria-current="page" href="#">FAQ & Aftercare</a>
+                </ul>
+                <p class="text-center text-light">© 2022 Company, Inc</p>
+                <p class="text-center text-light ">Site by <a class=" text-decoration-none text-info" target="_blank"
+                        href="https://www.syrussamson.ca">syrussamson.ca</a></p>
+            </footer>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
