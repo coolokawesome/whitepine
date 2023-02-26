@@ -20,31 +20,29 @@
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="/style.css">
     <meta name="theme-color" content="#fafafa">
+    <script src="https://kit.fontawesome.com/9de7b5c7f4.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Content start -->
         <!-- Header -->
-        <section class="header-container">
-            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">About</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">Contact</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">FAQ & Aftercare</a>
-                            <a class="nav-link text-light " aria-current="page" href="#">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <section class="header-container bg-dark">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"
+                        src="./imgs/WPTI_Icon_White.png"></img>
+                </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 pe-3">
+                    <li><a href=".landing-container" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="./gallery.html" class="nav-link px-2 link-light">Galleries</a></li>
+                    <li><a href="#artists" class="nav-link px-2 link-light">Artists</a></li>
+                    <li><a href="#contact" class="nav-link px-2 link-light">Contact</a></li>
+                    <li><a href="./FAQ.html" class="nav-link px-2 link-light">FAQs & Aftercare</a></li>
+                </ul>
+            </header>
         </section>
         <section>
             <div class="header-container bg-dark">
@@ -115,9 +113,6 @@
         <!-- Footer -->
         <section class="footer-container bg-dark ">
             <div class="container">
-                <div class="row">
-
-                </div>
                 <footer class="py-3 my-4 text-light">
                     <div>
                         <p class="text-light text-center">Back to Top</p>
@@ -128,9 +123,16 @@
                         <a class="nav-link text-light " aria-current="page" href="#">Contact</a>
                         <a class="nav-link text-light " aria-current="page" href="#">FAQ & Aftercare</a>
                     </ul>
-                    <p class="text-center text-light">© 2022 Company, Inc</p>
-                    <p class="text-center text-light ">Site by <a class=" text-decoration-none text-info"
-                            target="_blank" href="https://www.syrussamson.ca">syrussamson.ca</a></p>
+                    <div class="container-md">
+                        <div class="row">
+                            <div class="pt-3 pb-3 col text-center">
+                                <i class="fa-2xl p-2 fa-brands fa-facebook"></i>
+                                <i class="fa-2xl p-2 fa-brands fa-instagram"></i>
+                                <i class="fa-2xl p-2 fa-brands fa-tiktok"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-light">© 2023 White Pine Tattoo, Inc</p>
                 </footer>
             </div>
         </section>
