@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="theme-color" content="#fafafa">
     <script src="https://kit.fontawesome.com/9de7b5c7f4.js" crossorigin="anonymous"></script>
+    <!-- JQ -->
 
 </head>
 
@@ -64,9 +65,9 @@
                                 <div class=" col-6 text-end">
                                     <label class="text-light" for="artist">Artist: </label>
                                     <select name="artist" class="ps-1 pe-5" id="artistSelect">
-                                        <option>Anne</option>
-                                        <option>Jeff</option>
-                                        <option selected>All</option>
+                                        <option value="Anne" id="Anne">Anne</option>
+                                        <option value="Jeff" id="Jeff">Jeff</option>
+                                        <option value="All" id="All"selected>All</option>
                                     </select>
                                 </div>
                             </div>
@@ -77,50 +78,10 @@
         </section>
         <div class="header-container bg-dark">
             <div class="container">
-                <div class="row" data-masonry='{"percentPosition": true },  "itemSelector": ".col" }'>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>                       
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>            
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>                    
-                    <div class="col-sm-6 col-lg-4">
-                        <img class="img img-fluid" src="https://source.unsplash.com/random/?Bunny/">
-                    </div>
+                <div class="row content-row" id='contentRow'data-masonry='{"percentPosition": true },  "itemSelector": ".col" }'>
+                    <div id="contentContainer">
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,6 +115,8 @@
             </div>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous" async defer></script>
+    <script src="app.js" async defer></script>
 </body>
 
 </html>
