@@ -204,3 +204,6 @@ i:hover {
 .link-light.active {
     background-color: rgb(34, 97, 21) !important;
 }
+.phone-num {
+    color: white !important;
+}
