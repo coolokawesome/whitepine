@@ -8,6 +8,12 @@ anne = $('#Anne')
 jeff = $('#Jeff')
 all = $('#All')
 
+$('#contentContainer').append(
+    $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
+        $('<img>').attr('class', 'img img-fluid').attr('src', 'https://source.unsplash.com/random/?All')
+    )
+)
+
 
 selector.change(function () {
     console.log(this.value);
