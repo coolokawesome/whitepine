@@ -1,16 +1,16 @@
 @font-face {
     font-family: DM;
-    src: url(fonts/DMSerifDisplay-Regular.ttf);
+    src: url("./fonts/DMSerifDisplay-Regular.ttf");
 }
 
 @font-face {
     font-family: DM-italic;
-    src: url(fonts/DMSerifDisplay-Italic.ttf);
+    src: url("./fonts/DMSerifDisplay-Italic.ttf");
 }
 
 @font-face {
     font-family: Nanum;
-    src: url(fonts/NanumMyeongjo-Regular.ttf);
+    src: url('./fonts/DMSerifDisplay-Regular.ttf');
 }
 
 body {

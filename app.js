@@ -1,8 +1,9 @@
+
 title = $('#artistTitle')
 selector = $('#artistSelect')
 
 //main box
-contentRow= $('#contentRow')
+contentRow = $('#contentRow')
 //options
 anne = $('#Anne')
 jeff = $('#Jeff')
@@ -24,14 +25,15 @@ selector.change(function () {
     title.append(
         $('<h3>').text(this.value).attr('id', 'artistHeader').attr('class', 'text-light')
     )
-        //new box
+    //new box
     contentRow.append(
         $('<div>').attr('id', 'contentContainer')
     )
 
     $('#contentContainer').append(
         $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid').attr('src', 'https://source.unsplash.com/random/?'+ this.value + ' ')
+            $('<img>').attr('class', 'img img-fluid').attr('src', 'https://source.unsplash.com/random/?' + this.value + ' ')
         )
     )
 });
+console.log('ready')
