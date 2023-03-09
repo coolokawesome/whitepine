@@ -23,6 +23,7 @@ body {
     background-color: rgb(33, 37, 41);
     transition-duration: 0.2s;
     position: relative;
+    overflow-x: hidden !important;
 }
 
 .wrapper {
@@ -113,7 +114,7 @@ h5 {
 
 p, th, td {
     font-family: 'Nanum';
-    color: rgb(203, 203, 203)
+    color: rgb(171, 171, 171)
     ;
     list-style-type: none;
 }
