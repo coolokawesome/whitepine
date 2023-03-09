@@ -12,6 +12,12 @@
     font-family: Nanum;
     src: url('./fonts/DMSerifDisplay-Regular.ttf');
 }
+.carousel-item img {  
+    object-fit: contain !important;
+    object-position: center !important;
+    overflow: hidden !important;
+    height:50vh !important;
+  }
 
 body {
     background-color: rgb(33, 37, 41);
@@ -61,6 +67,7 @@ body {
         flex-basis: 100%;
         transform: translateY(-18vh);
     }
+
   }
 
 .title-addr {
@@ -206,4 +213,7 @@ i:hover {
 }
 .phone-num {
     color: white !important;
+}
+.blurb {
+    font-size: large;
 }
