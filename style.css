@@ -239,5 +239,5 @@ td {
     margin: auto;
 }
 .closed {
-    color: rgb(194, 67, 67);
+    color: rgb(194, 67, 67) !important;
 }
