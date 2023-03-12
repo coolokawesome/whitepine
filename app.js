@@ -1,17 +1,17 @@
 
 const anneUrls = {
     urls: [
-        'https://source.unsplash.com/random/?anne',
-        'https://source.unsplash.com/random/?anna',
-        'https://source.unsplash.com/random/?annie',
+        './imgs/anne/anne1.jpg',
+        './imgs/anne/anne2.png',
+        './imgs/anne/anne3.jpg',
     ]
 } ;
 
 const jeffUrls = {
     urls: [
-        'https://source.unsplash.com/random/?jeff',
-        'https://source.unsplash.com/random/?jeffie',
-        'https://source.unsplash.com/random/?jefferson',
+        'imgs/jeff/jeff1.png',
+        'imgs/jeff/jeff2.png',
+        'imgs/jeff/jeff3.png',
     ]
 }
 
@@ -26,8 +26,8 @@ contentRow = $('#contentRow')
 mapAnne = () => {
     anneUrls.urls.forEach(url => {
         $('#contentContainer').append(
-        $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid').attr('src', url)
+        $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
+            $('<img>').attr('class', 'img img-fluid w-auto h-100 py-2').attr('src', url)
         )
     )
     })
@@ -36,7 +36,7 @@ mapJeff = () => {
     jeffUrls.urls.forEach(url => {
         $('#contentContainer').append(
         $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid').attr('src', url)
+            $('<img>').attr('class', 'img img-fluid w-auto h-100 py-2').attr('src', url)
         )
     )
     });
@@ -50,13 +50,9 @@ selector.change(function () {
     //remove the header and content box
     $('#artistHeader').remove()
     $('#contentContainer').remove()
-    //title append
-    title.append(
-        $('<h3>').text(this.value).attr('id', 'artistHeader').attr('class', 'text-light')
-    )
     //new box
     contentRow.append(
-        $('<div>').attr('id', 'contentContainer').attr('class', 'row')
+        $('<div>').attr('id', 'contentContainer').attr('class', 'row masonry-grid')
     )
 
     if (this.value == "Anne") {  
@@ -65,8 +61,16 @@ selector.change(function () {
     if (this.value == "Jeff") {
         return mapJeff()
     }
-    if (this.value != "Anne" || this.value != "Jeff") {
+    if (this.value == 'All') {
        return mapAll()
         
     }
 });
+$('#artistHeader').remove()
+    $('#contentContainer').remove()
+contentRow.append(
+    $('<div>').attr('id', 'contentContainer').attr('class', 'row')
+)
+mapAll()
+
+
