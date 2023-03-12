@@ -224,6 +224,7 @@ i:hover {
 }
 .blurb {
     font-size: large;
+    text-align: start;
 }
 .content-row {
     justify-content: center;
@@ -240,4 +241,7 @@ td {
 }
 .closed {
     color: rgb(194, 67, 67) !important;
+}
+.scrollspy-example-2 p {
+    text-align: start;
 }
