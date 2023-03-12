@@ -27,7 +27,7 @@ mapAnne = () => {
     anneUrls.urls.forEach(url => {
         $('#contentContainer').append(
         $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid w-auto h-100 py-2').attr('src', url)
+            $('<img>').attr('class', 'img img-fluid w-auto py-2').attr('src', url)
         )
     )
     })
@@ -37,7 +37,7 @@ mapJeff = () => {
         
         $('#contentContainer').append(
         $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid w-auto h-100 py-2').attr('src', url)
+            $('<img>').attr('class', 'img img-fluid w-auto py-2').attr('src', url)
         )
     )
     });
