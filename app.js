@@ -34,6 +34,7 @@ mapAnne = () => {
 };
 mapJeff = () => {
     jeffUrls.urls.forEach(url => {
+        
         $('#contentContainer').append(
         $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
             $('<img>').attr('class', 'img img-fluid w-auto h-100 py-2').attr('src', url)
@@ -46,9 +47,9 @@ mapAll = () => {
 }
 
 selector.change(function () {
-    console.log(this.value);
+    
     //remove the header and content box
-    $('#artistHeader').remove()
+    $('#artistHeader').text(this.value)
     $('#contentContainer').remove()
     //new box
     contentRow.append(
@@ -66,7 +67,7 @@ selector.change(function () {
         
     }
 });
-$('#artistHeader').remove()
+
     $('#contentContainer').remove()
 contentRow.append(
     $('<div>').attr('id', 'contentContainer').attr('class', 'row')

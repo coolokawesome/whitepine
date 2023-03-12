@@ -70,6 +70,10 @@ body {
     }
 
   }
+    iframe {
+        width: 100vw;
+    }
+    
 
 .title-addr {
     flex-basis: 100%;
@@ -217,4 +221,7 @@ i:hover {
 }
 .blurb {
     font-size: large;
+}
+.content-row {
+    justify-content: center;
 }
