@@ -56,7 +56,7 @@ selector.change(function () {
         $('<div>').attr('id', 'contentContainer').attr('class', 'row masonry-grid')
     )
 
-    if (this.value == "Anne") {  
+    if (this.value == "Anna") {  
         return mapAnne()
     }
     if (this.value == "Jeff") {

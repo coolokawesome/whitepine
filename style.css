@@ -117,15 +117,17 @@ h5 {
     color: rgb(242, 255, 239)
 }
 
-p, th, td {
+p,  td {
     font-family: 'Nanum';
-    color: rgb(171, 171, 171)
-    ;
+    color: rgb(190, 190, 190);
     list-style-type: none;
+text-align: center;
 }
 th {
+    color: rgb(237, 237, 237);
     text-align: right;
     font-family: 'DM';
+    text-align: center;
 }
  label {
     font-family: 'DM';
@@ -225,4 +227,17 @@ i:hover {
 }
 .content-row {
     justify-content: center;
+}
+table {
+    margin: none !important;
+}
+td {
+    text-align: start;
+}
+.op {
+    text-align: end;
+    margin: auto;
+}
+.closed {
+    color: rgb(194, 67, 67);
 }
