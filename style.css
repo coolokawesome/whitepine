@@ -243,5 +243,5 @@ td {
     color: rgb(194, 67, 67) !important;
 }
 .scrollspy-example-2 p {
-    text-align: start;
+    text-align: start !important;
 }
