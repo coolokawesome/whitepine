@@ -1,13 +1,7 @@
-DONE fix the positioning of the buttons relative to the bottom of the logo (all fixed, just fix the xxl positioning
-DONE change the styling of the buttons
-3.   heighten the contact form
-4.   figure out a better space for the form notice
-DONE.   format the FAQ section 
-DONE.   Set up n FAQ page 
-DONE  Link a downloadable aftercare PDF (if exists) on the FAQ page 
-8.   formatting on the form box, ( fix the types)
-9.   link a form forwarding service to the form 
-DONE navbar positioning to the center 
-11.  Navbar links (FIX CLOSING NAVBAR)!!!!
-12.  Button links!!!!
-13. Back to top navigation javascript script 
+fix navbars 
+fix footers
+fix masonry
+fix js object 
+upload PDF
+FIX ALL LINKS ON ALL PAGES
+add the email form config

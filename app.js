@@ -1,20 +1,49 @@
 
+const anneUrls = {
+    urls: [
+        'https://source.unsplash.com/random/?anne',
+        'https://source.unsplash.com/random/?anna',
+        'https://source.unsplash.com/random/?annie',
+    ]
+} ;
+
+const jeffUrls = {
+    urls: [
+        'https://source.unsplash.com/random/?jeff',
+        'https://source.unsplash.com/random/?jeffie',
+        'https://source.unsplash.com/random/?jefferson',
+    ]
+}
+
 title = $('#artistTitle')
 selector = $('#artistSelect')
 
 //main box
 contentRow = $('#contentRow')
 //options
-anne = $('#Anne')
-jeff = $('#Jeff')
-all = $('#All')
 
-$('#contentContainer').append(
-    $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
-        $('<img>').attr('class', 'img img-fluid').attr('src', 'https://source.unsplash.com/random/?' + all + '')
+
+mapAnne = () => {
+    anneUrls.urls.forEach(url => {
+        $('#contentContainer').append(
+        $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
+            $('<img>').attr('class', 'img img-fluid').attr('src', url)
+        )
     )
-)
-
+    })
+};
+mapJeff = () => {
+    jeffUrls.urls.forEach(url => {
+        $('#contentContainer').append(
+        $('<div>').attr('class', 'col-12 col-md-6 col-lg-4 ').append(
+            $('<img>').attr('class', 'img img-fluid').attr('src', url)
+        )
+    )
+    });
+}
+mapAll = () => {
+    mapAnne(), mapJeff()
+}
 
 selector.change(function () {
     console.log(this.value);
@@ -27,13 +56,17 @@ selector.change(function () {
     )
     //new box
     contentRow.append(
-        $('<div>').attr('id', 'contentContainer')
+        $('<div>').attr('id', 'contentContainer').attr('class', 'row')
     )
 
-    $('#contentContainer').append(
-        $('<div>').attr('class', 'col-sm-6 col-lg-4 ').append(
-            $('<img>').attr('class', 'img img-fluid').attr('src', 'https://source.unsplash.com/random/?' + this.value + ' ')
-        )
-    )
+    if (this.value == "Anne") {  
+        return mapAnne()
+    }
+    if (this.value == "Jeff") {
+        return mapJeff()
+    }
+    if (this.value != "Anne" || this.value != "Jeff") {
+       return mapAll()
+        
+    }
 });
-console.log('ready')

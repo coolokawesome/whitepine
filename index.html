@@ -22,21 +22,39 @@
         <!-- Content start -->
         <!-- Header -->
         <section class="header-container bg-dark">
-            <header
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+                <div class="container-fluid text-center">
                     <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"
                         src="./imgs/WPTI_Icon_White.png"></img>
-                </a>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 pe-3">
-                    <li><a href="#home" class="nav-link px-2 link-secondary">Home</a></li>
-                    <li><a href="./gallery.html" class="nav-link px-2 link-light">Galleries</a></li>
-                    <li><a href="#artists" class="nav-link px-2 link-light">Artists</a></li>
-                    <li><a href="#contact" class="nav-link px-2 link-light">Contact</a></li>
-                    <li><a href="./FAQ.html" class="nav-link px-2 link-light">FAQs & Aftercare</a></li>
-                    <li><a href="./our-story.html" class="nav-link px-2 link-light">Our Story</a></li>
-                </ul>
-            </header>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link px-2 link-light">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./gallery.html" class="nav-link px-2 link-light">Galleries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./index.html#artists" class="nav-link px-2 link-light">Artists</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./index.html#contact" class="nav-link px-2 link-light">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./FAQ.html" class="nav-link px-2 link-light">FAQ & Aftercare</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./our-story.html" class="nav-link px-2 link-light">Our Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </section>
         <section id="home" class="landing-container">
             <img src="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -141,16 +159,22 @@
                         <div class="col-12 col-md-6 my-2 my-md-5">
                             <div class="">
 
-                                <p class="blurb"> Jeff is originally an an illustrator of fine-line black ink illustrations, some of
+                                <p class="blurb"> Jeff is originally an an illustrator of fine-line black ink
+                                    illustrations, some of
                                     his larger pieces would take upwards of two weeks to complete. He has been exploring
                                     many different mediums such as gouache, acrylics, oil paints and large scale
                                     abstract mixed media. He has been tattooing now for just over a year, training under
                                     Anna and does illustrative blackwork and smooth soft shaded black and grey medium
                                     sized pieces. Jeff’s hobbies include drawing, spending time with his kids and
                                     family, concerts, video games and anime.
+                                    <br>
                                 </p>
-                                <a class="link-success">View Gallery...</a>
+                                
+
+                                
+                                
                             </div>
+                            <a class="link-success">View Gallery...</a>
                         </div>
                     </div>
                 </div>
@@ -160,16 +184,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h3 class="text-light">Connect with us:</h3>
+                        <h3 class="text-light">Connect with us!</h3>
                     </div>
                 </div>
             </div>
             <div class="container-md">
                 <div class="row">
                     <div class="fa-xl pt-3 col text-center">
-                        <i class="fa-2xl p-3 fa-brands fa-facebook"></i>
-                        <i class="fa-2xl p-3 fa-brands fa-instagram"></i>
-                        <i class="fa-2xl p-3 fa-brands fa-tiktok"></i>
+                        <i class="fa fa-2xl py-3 fa-brands fa-instagram"></i>
                     </div>
                 </div>
             </div>
@@ -196,16 +218,17 @@
                         <!-- form -->
                         <h3 class="phone-num text-center text-white link-light text-decoration-none contact-text mt-4">
                             Or contact
-                            us at: (123) 456-7890</h3>
+                            us at: whitepinetattoos@gmail.com
+                        </h3>
                         <div class="container col-12 col-md-5 d-flex justify-content-center p-3">
-                            <p class="bg-dark text-light p-3 rounded-1">
+                            <p class="bg-dark text-light p-3 rounded-1 text-center">
                                 *Due to a high volume of incoming messages, we encourage you to read our FAQ before
                                 sending
                                 us a message.
                                 This is to ensure that we respond to your inquiries as quickly and efficiently as
                                 possible.
                                 <br>Currently,
-                                walk-ins are <b>not available</b> at this time.
+                                walk-ins are available <b>Tuesdays</b>, however we appreiate a call ahead of time!
                             </p>
                         </div>
                     </div>
@@ -218,7 +241,8 @@
                     <div class="text-center">
                         <div class="container bg-dark">
                             <h2>See our FAQ for aftercare instructions and more</h2>
-                            <a href="./FAQ.html"><button class="btn btn-FAQ rounded-pill ps-4 pe-4 pt-2 pb-2">Visit</button></a>
+                            <a href="./FAQ.html"><button
+                                    class="btn btn-FAQ rounded-pill ps-4 pe-4 pt-2 pb-2">Visit</button></a>
                         </div>
 
                     </div>
@@ -228,39 +252,20 @@
             <div class="row">
                 <div class="col-12 col-md-6 d-flex justify-content-center">
                     <div>
-                        <h5 class="text-light">99 Hopkins Blvd, Tiny, ON</h4>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181448.81859503692!2d-80.13421322731679!3d44.71679930683888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2aec94ef228fd7%3A0x887e3fa3231000ed!2sTiny%2C%20ON!5e0!3m2!1sen!2sca!4v1677373944008!5m2!1sen!2sca"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.57375218241157!2d-79.88453433122493!3d44.74898979830005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2adb102428cc35%3A0x5e81cb9e310a9bf9!2s309%20King%20St%2C%20Midland%2C%20ON%20L4R%203M5!5e0!3m2!1sen!2sca!4v1678560536124!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <div>
-                        <br class="border-bottom">
-                        <h4 class="text-light text-center">Hours:</h4>
-                        <table class="text-light">
-                            <tr>
-                                <th>Sunday &nbsp;</th>
-                                <td>Closed</td>
-                            </tr>
-                            <tr>
-                                <th>Monday &nbsp; </th>
-                                <td> 9am - 5pm</td>
-                            </tr>
-                            <tr>
-                                <th>Tuesday &nbsp;</th>
-                                <td> 9am - 5pm</td>
-                            </tr>
-                            <tr>
-                                <th>Wednesday &nbsp;</th>
-                                <td> 9am - 5pm</td>
-                            </tr>
-                            <tr>
-                                <th>Thursday &nbsp;</th>
-                                <td> 9am - 5pm</td>
-                            </tr>
-                        </table>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h4 class="text-light text-center">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </h4>
+                            <h3 class="text-light">309 King Street</h3>
+                            <h5 class="text-light">Midland, Ontario</h5>
+                        </div>
+
+                        
                     </div>
 
 
@@ -277,19 +282,20 @@
                             <p class="text-success text-decoration-none text-center text">Back to Top</p>
                         </a>
                     </div>
-                    <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-light">
-                        <a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
-                        <a class="nav-link text-light " aria-current="page" href="./gallery.html">Galleries</a>
-                        <a class="nav-link text-light " aria-current="page" href="#artists">Artists</a>
-                        <a class="nav-link text-light " aria-current="page" href="#contact">Contact</a>
-                        <a class="nav-link text-light " aria-current="page" href="./FAQ.html">FAQ & Aftercare</a>
+
+                        <ul class="d-flex flex-wrap justify-content-center me-auto mb-2 mb-lg-0 border-top pt-4 ps-0">
+                            <a href="./index.html" class=" px-2 link-light">Home</a>
+                            <a href="./gallery.html" class=" px-2 link-light">Galleries</a>
+                            <a href="./index.html#artists" class="px-2 link-light">Artists</a>
+                            <a href="./index.html#contact" class="px-2 link-light">Contact</a>
+                            <a href="./FAQ.html" class=" px-2 link-light">FAQ & Aftercare</a>
+                            <a href="./our-story.html" class="px-2 link-light">Our Story</a>
                     </ul>
+
                     <div class="container-md">
                         <div class="row">
                             <div class="pt-3 pb-3 col text-center">
-                                <i class="fa-2xl p-2 fa-brands fa-facebook"></i>
                                 <i class="fa-2xl p-2 fa-brands fa-instagram"></i>
-                                <i class="fa-2xl p-2 fa-brands fa-tiktok"></i>
                             </div>
                         </div>
                     </div>
@@ -303,7 +309,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script> <!-- TODO: Add Modernizr js -->
+
     <script src="js/app.js"></script> <!-- TODO: Update app entry point -->
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
