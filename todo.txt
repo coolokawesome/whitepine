@@ -1,7 +1,4 @@
-fix navbars 
-fix footers
-fix masonry
-fix js object 
-upload PDF
-FIX ALL LINKS ON ALL PAGES
-add the email form config
+upload pdf
+robots 
+hire seo? 
+add business on google maps
