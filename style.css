@@ -158,7 +158,9 @@ th {
 .contact-container {
     background: url("./imgs/conact.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
+    background-position: center !important;
+
 }
 
 i {
@@ -215,6 +217,11 @@ i:hover {
     background: url(./imgs/banner.webp) !important;
     padding-top: 10vh;
     padding-bottom: 10vh;
+background-position: center !important;
+background-size: cover !important;
+background-attachment: fixed !important;
+background-size: 100% auto;
+
 }
 .link-light.active {
     background-color: rgb(34, 97, 21) !important;
@@ -244,4 +251,10 @@ td {
 }
 .scrollspy-example-2 p {
     text-align: start !important;
+}
+.nav-pills {
+    background-color: #32373c !important;
+}
+.border {
+    border: solid white;
 }
